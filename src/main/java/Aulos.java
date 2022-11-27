@@ -1,4 +1,4 @@
-public class Aulos extends Instrument implements IPlay{
+public class Aulos extends Instrument implements IPlay, ISell{
 
     private String previousOwner;
 
@@ -13,5 +13,10 @@ public class Aulos extends Instrument implements IPlay{
 
     public String playInstrument(){
         return "blow, blow, blow";
+    }
+
+    public double calculateMarkup(){
+        double markup=this.getSellPrice()-this.getCostPrice();
+        return markup;
     }
 }

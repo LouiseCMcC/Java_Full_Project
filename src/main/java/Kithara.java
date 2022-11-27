@@ -1,4 +1,4 @@
-public class Kithara extends Instrument implements IPlay{
+public class Kithara extends Instrument implements IPlay, ISell{
 
     private String colour;
 
@@ -13,5 +13,10 @@ public class Kithara extends Instrument implements IPlay{
 
     public String playInstrument(){
         return "strum, strum, strum";
+    }
+
+    public double calculateMarkup(){
+        double markup=this.getSellPrice()-this.getCostPrice();
+        return markup;
     }
 }

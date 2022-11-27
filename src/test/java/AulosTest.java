@@ -24,4 +24,9 @@ public class AulosTest {
         assertEquals("blow, blow, blow", aulos.playInstrument());
     }
 
+    @Test
+    public void canGetAulosMarkup(){
+        assertEquals(1000.00, aulos.calculateMarkup(), 0.0);
+    }
+
 }

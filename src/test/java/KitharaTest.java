@@ -21,4 +21,9 @@ public class KitharaTest {
         assertEquals("strum, strum, strum", kithara.playInstrument());
     }
 
+    @Test
+    public void canGetKitharaMarkup(){
+        assertEquals(1000.00, kithara.calculateMarkup(), 0.0);
+    }
+
 }

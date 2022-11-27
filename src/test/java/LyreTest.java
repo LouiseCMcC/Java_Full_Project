@@ -21,4 +21,8 @@ public class LyreTest {
         assertEquals("pluck, pluck, pluck", lyre.playInstrument());
     }
 
+    @Test
+    public void canGetLyreMarkup(){
+        assertEquals(1000.00, lyre.calculateMarkup(), 0.0);
+    }
 }
